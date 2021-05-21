@@ -1,0 +1,135 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #51A8ED;
+}
+
+#navbar {
+    display: block;
+    position: fixed;
+    background-color: #A151ED;
+    width: 100%;
+    color: white;
+}
+
+#navbar ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 1rem;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: white;
+}
+
+#welcome-section {
+    width: 100%;
+    padding-top: 5rem;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    background-color: #51A8ED;
+}
+
+#welcome-section h1 {
+    font-size: 4rem;
+    color: white;
+    text-align: center;
+}
+
+#welcome-section span {
+    font-size: 3rem;
+    color: white;
+}
+
+#projects {
+    text-align: center;
+}
+
+#projects>h1 {
+    margin: 3rem;
+    font-size: 3rem;
+}
+
+.box-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: space-around;
+    align-items: center;
+}
+
+.project-tile {
+    border: 3px solid #51A8ED;
+    border-radius: 5px;
+    margin: 1rem;
+}
+
+.project-tile a {
+    text-decoration: none;
+}
+
+img {
+    width: 250px;
+    padding: 0.5rem;
+}
+
+.project-name {
+    padding: 1rem;
+    border-top: 3px solid #51A8ED;
+}
+
+#contact {
+    text-align: center;
+}
+
+#contact h1 {
+    font-size: 3rem;
+    margin: 2rem;
+}
+
+#contact ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    text-align: center;
+}
+
+#contact li {
+    transition: 0.5s;
+}
+
+#contact li:hover {
+    transition: 1s;
+    transform: translateY(-1rem);
+}
+
+#contact .icon {
+    width: 5rem;
+    margin: 1rem;
+}
+
+hr {
+    border-top: 2px solid #A151ED;
+    width: 80%;
+    margin: 2rem auto 2rem auto;
+}
+
+.hr {
+    text-align: center;
+}
+
+@media screen and (max-width: 576){
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
